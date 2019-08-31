@@ -2,27 +2,25 @@ package cn.emitor.cheesepro.buff;
 
 import cn.emitor.cheesepro.Buff;
 import cn.emitor.cheesepro.enums.BuffEnum;
-import org.springframework.stereotype.Component;
 
-@Component
-public class Shit implements Buff {
+public class LangRen implements Buff {
     @Override
     public String name() {
-        return null;
+        return BuffEnum.LANG_REN.name;
     }
 
     @Override
     public int[] levels() {
-        return new int[0];
+        return BuffEnum.LANG_REN.levels;
     }
 
     @Override
     public String descriptions() {
-        return "this is shit";
+        return BuffEnum.LANG_REN.description;
     }
 
     @Override
     public BuffEnum getBuffEnum() {
-        return null;
+        return BuffEnum.LANG_REN;
     }
 }

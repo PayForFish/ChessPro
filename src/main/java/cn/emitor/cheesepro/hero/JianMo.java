@@ -1,9 +1,6 @@
 package cn.emitor.cheesepro.hero;
 
 import cn.emitor.cheesepro.Hero;
-import cn.emitor.cheesepro.buff.Devil;
-import cn.emitor.cheesepro.buff.Knife;
-import cn.emitor.cheesepro.buff.Shit;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashSet;

@@ -3,24 +3,24 @@ package cn.emitor.cheesepro.buff;
 import cn.emitor.cheesepro.Buff;
 import cn.emitor.cheesepro.enums.BuffEnum;
 
-public class Knife implements Buff {
+public class Long implements Buff {
     @Override
     public String name() {
-        return BuffEnum.JIAN_SHI.name;
+        return BuffEnum.LONG.name;
     }
 
     @Override
     public int[] levels() {
-        return BuffEnum.JIAN_SHI.levels;
+        return BuffEnum.LONG.levels;
     }
 
     @Override
     public String descriptions() {
-        return BuffEnum.JIAN_SHI.description;
+        return BuffEnum.LONG.description;
     }
 
     @Override
     public BuffEnum getBuffEnum() {
-        return BuffEnum.JIAN_SHI;
+        return BuffEnum.LONG;
     }
 }
