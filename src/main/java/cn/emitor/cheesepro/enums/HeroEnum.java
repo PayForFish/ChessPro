@@ -59,8 +59,6 @@ public enum HeroEnum {
 
     private String name;
     private int cost;
-//    private Set<Buff> buffs;
-
 
     HeroEnum(String name, int cost) {
     }

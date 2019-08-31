@@ -1,28 +1,31 @@
 package cn.emitor.cheesepro.hero;
 
 import cn.emitor.cheesepro.Hero;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.HashSet;
+import cn.emitor.cheesepro.buff.Devil;
+import cn.emitor.cheesepro.buff.Knife;
+import cn.emitor.cheesepro.enums.HeroEnum;
 
 public class JianMo extends Hero {
-    @Autowired
-    private Shit shit;
+
+    private Devil devil;
+    private Knife knife;
 
     public JianMo() {
         super();
-    }
 
+    }
 
     @Override
     public void setHeroBuff() {
-        this.buffs = new HashSet<>();
-        Devil devil = new Devil() {
-        };
+        devil = new Devil();
+        knife = new Knife();
+
         buffs.add(devil);
-        buffs.add(shit);
-        Knife knife = new Knife() {
-        };
         buffs.add(knife);
+    }
+
+    @Override
+    public void setterHeroEnum() {
+        this.heroEnum = HeroEnum.JIAN_MO;
     }
 }
