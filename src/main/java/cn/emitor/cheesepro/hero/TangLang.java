@@ -1,33 +1,29 @@
 package cn.emitor.cheesepro.hero;
 
 import cn.emitor.cheesepro.Hero;
-import cn.emitor.cheesepro.buff.DouShi;
+import cn.emitor.cheesepro.buff.CiKe;
 import cn.emitor.cheesepro.buff.XuKong;
 import cn.emitor.cheesepro.enums.HeroEnum;
 
-/**
- * @author Emitor
- * on 2019/8/31.
- */
-public class DaChongZi extends Hero {
+public class TangLang extends Hero {
+    private CiKe ciKe;
     private XuKong xuKong;
-    private DouShi douShi;
 
-    public DaChongZi() {
+    public TangLang() {
         super();
     }
 
     @Override
     public void setHeroBuff() {
+        this.ciKe = new CiKe();
         this.xuKong = new XuKong();
-        this.douShi = new DouShi();
 
-        this.buffs.add(douShi);
         this.buffs.add(xuKong);
+        this.buffs.add(ciKe);
     }
 
     @Override
     public void setterHeroEnum() {
-        this.heroEnum = HeroEnum.DA_CHONG_ZI;
+        this.heroEnum = HeroEnum.TANG_LANG;
     }
 }

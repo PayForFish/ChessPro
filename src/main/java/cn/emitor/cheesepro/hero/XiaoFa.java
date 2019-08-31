@@ -2,32 +2,28 @@ package cn.emitor.cheesepro.hero;
 
 import cn.emitor.cheesepro.Hero;
 import cn.emitor.cheesepro.buff.FaShi;
-import cn.emitor.cheesepro.buff.Dragon;
+import cn.emitor.cheesepro.buff.YueDeErRen;
 import cn.emitor.cheesepro.enums.HeroEnum;
 
-/**
- * @author Emitor
- * on 2019/8/31.
- */
-public class LongWang extends Hero {
-    private Dragon dragon;
+public class XiaoFa extends Hero {
     private FaShi faShi;
+    private YueDeErRen yueDeErRen;
 
-    public LongWang() {
+    public XiaoFa() {
         super();
     }
 
     @Override
     public void setHeroBuff() {
-        this.dragon = new Dragon();
         this.faShi = new FaShi();
+        this.yueDeErRen = new YueDeErRen();
 
-        this.buffs.add(dragon);
         this.buffs.add(faShi);
+        this.buffs.add(yueDeErRen);
     }
 
     @Override
     public void setterHeroEnum() {
-        this.heroEnum = HeroEnum.LONG_WANG_;
+        this.heroEnum = HeroEnum.XIAO_FA;
     }
 }

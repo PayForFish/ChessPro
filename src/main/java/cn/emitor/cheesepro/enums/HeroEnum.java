@@ -24,7 +24,7 @@ public enum HeroEnum {
     KA_SA_DING("卡萨丁", 1),
     KA_TE("卡特", 3),
     TIAN_SHI("天使", 5),
-    KAN_NAN("凯南", 3),
+    KAI_NAN("凯南", 3),
     TANG_LANG("螳螂", 1),
     QIAN_JUE("千珏", 4),
     RI_NV("日女", 4),
