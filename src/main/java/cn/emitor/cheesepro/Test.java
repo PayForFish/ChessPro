@@ -8,23 +8,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Test {
 
     public static void main(String[] args) {
-//        testTheMostBuffTeam();
-//        List<Buff> buffs = new ArrayList<>();
-//        buffs.add(new JianShi());
-//        buffs.add(new Devil());
-//        buffs.add(new JianShi());
-//        buffs.add(new Devil());
-//        buffs.add(new LangRen());
-//
-//        Map<Buff, Integer> map = getBuffAndItCountMap(buffs);
-//        Iterator<Map.Entry<Buff, Integer>> iterator = map.entrySet().iterator();
-//        while (iterator.hasNext()) {
-//            Map.Entry<Buff, Integer> entry = iterator.next();
-//            System.out.println(entry.getKey().name() + " 个数： " + entry.getValue());
-//        }
-//        int point = getPoint(map);
-//        System.out.println(point);
-
         Map<String, List<Hero>> map = testTheMostBuffTeam();
         map.forEach((k, v) -> {
             StringBuilder stringBuilder = new StringBuilder();
@@ -45,7 +28,6 @@ public class Test {
         long length = allHeroList.size();
 
         int point = 0; // 计算指数
-//        int powerTeamCount = 1;
 
         Map<String, List<Hero>> powerTeam = new HashMap<>();
 
@@ -84,13 +66,11 @@ public class Test {
                                                     StringBuilder stringBuilder = new StringBuilder();
                                                     calcHeroList.forEach(hero -> {
                                                         stringBuilder.append(hero.heroEnum.name).append(" + ");
-//                                                        System.out.println("给力阵容方案" + nowPoint + "种羁绊：" + stringBuilder.toString());
                                                     });
                                                     System.out.println("以下给力阵容方案具有" + nowPoint + "种羁绊：" + stringBuilder.toString());
                                                     System.out.println("以上阵容羁绊是："+getZhengXingFromHeroList(calcHeroList));
                                                     System.out.println("==========================我是分割线=============================");
                                                 }
-//                                                powerTeam.put("给力阵容方案" + nowPoint, calcHeroList);
                                             }
                                         }
                                     }
