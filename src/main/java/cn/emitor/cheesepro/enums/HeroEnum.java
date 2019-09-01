@@ -57,10 +57,12 @@ public enum HeroEnum {
     WEI("蔚", 3),
     JIN_KE_SI("金克斯", 4);
 
-    private String name;
-    private int cost;
+    public String name;
+    public int cost;
 
     HeroEnum(String name, int cost) {
+        this.name = name;
+        this.cost = cost;
     }
 
     @Override

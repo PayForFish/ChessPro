@@ -2,6 +2,7 @@ package cn.emitor.cheesepro;
 
 import cn.emitor.cheesepro.enums.HeroEnum;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public abstract class Hero implements HeroBuffSetter, HeroEnumSetter {
@@ -9,6 +10,7 @@ public abstract class Hero implements HeroBuffSetter, HeroEnumSetter {
     protected Set<Buff> buffs;
 
     protected Hero() {
+        this.buffs = new HashSet<>();
         setHeroBuff();
         setterHeroEnum();
     }

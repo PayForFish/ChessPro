@@ -20,7 +20,7 @@ public class DeLaiWen extends Hero {
     @Override
     public void setHeroBuff() {
         this.diGuo = new DiGuo();
-        this.jianShi = jianShi;
+        this.jianShi = new JianShi();
 
         this.buffs.add(jianShi);
         this.buffs.add(diGuo);

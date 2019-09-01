@@ -1,9 +1,10 @@
 package cn.emitor.cheesepro.buff;
 
+import cn.emitor.cheesepro.BaseBuff;
 import cn.emitor.cheesepro.Buff;
 import cn.emitor.cheesepro.enums.BuffEnum;
 
-public class LangRen implements Buff {
+public class LangRen extends BaseBuff {
     @Override
     public String name() {
         return BuffEnum.LANG_REN.name;

@@ -1,9 +1,9 @@
 package cn.emitor.cheesepro.buff;
 
-import cn.emitor.cheesepro.Buff;
+import cn.emitor.cheesepro.BaseBuff;
 import cn.emitor.cheesepro.enums.BuffEnum;
 
-public class Devil implements Buff {
+public class Devil extends BaseBuff {
     @Override
     public String name() {
         return BuffEnum.E_MO.name;

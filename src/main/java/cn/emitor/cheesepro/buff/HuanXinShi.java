@@ -1,5 +1,6 @@
 package cn.emitor.cheesepro.buff;
 
+import cn.emitor.cheesepro.BaseBuff;
 import cn.emitor.cheesepro.Buff;
 import cn.emitor.cheesepro.enums.BuffEnum;
 
@@ -7,7 +8,7 @@ import cn.emitor.cheesepro.enums.BuffEnum;
  * @author Emitor
  * on 2019/8/31.
  */
-public class HuanXinShi implements Buff {
+public class HuanXinShi extends BaseBuff {
     @Override
     public String name() {
         return BuffEnum.HUAN_XING_SHI.name;

@@ -11,7 +11,7 @@ import cn.emitor.cheesepro.enums.HeroEnum;
  */
 public class AKaLi extends Hero {
     private RenZhe renZhe;
-    private CiKe ciKel;
+    private CiKe ciKe;
 
     public AKaLi() {
      super();
@@ -19,10 +19,10 @@ public class AKaLi extends Hero {
 
     @Override
     public void setHeroBuff() {
-        this.ciKel = new CiKe();
+        this.ciKe = new CiKe();
         this.renZhe = new RenZhe();
 
-        this.buffs.add(ciKel);
+        this.buffs.add(ciKe);
         this.buffs.add(renZhe);
     }
 
