@@ -1,7 +1,6 @@
 package cn.emitor.cheesepro.buff;
 
 import cn.emitor.cheesepro.BaseBuff;
-import cn.emitor.cheesepro.Buff;
 import cn.emitor.cheesepro.enums.BuffEnum;
 
 public class JiDi extends BaseBuff {
